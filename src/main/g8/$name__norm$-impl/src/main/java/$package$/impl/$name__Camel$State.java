@@ -15,8 +15,8 @@ import org.immutables.value.Value;
  */
 @SuppressWarnings("serial")
 @Value.Immutable
-@JsonDeserialize(as = Immutable$name;format="Camel"$State)
-@JsonSerialize(as = Immutable$name;format="Camel"$State)
+@JsonDeserialize(as = Immutable$name;format="Camel"$State.class)
+@JsonSerialize(as = Immutable$name;format="Camel"$State.class)
 
 public abstract class $name;format="Camel"$State implements CompressedJsonable {
 

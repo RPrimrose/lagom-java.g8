@@ -10,7 +10,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import $package$.api.GreetingMessage;
 import $package$.api.$name;format="Camel"$Service;
 
 public class $name;format="Camel"$ServiceTest {
