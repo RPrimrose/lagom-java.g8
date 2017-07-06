@@ -13,8 +13,7 @@ public class $name;format="Camel"$Entity extends PersistentEntity<$name;format="
   @Override
   public Behavior initialBehavior(Optional<$name;format="Camel"$State> snapshotState) {
 
-    BehaviorBuilder b = newBehaviorBuilder(
-        snapshotState.orElse(new $name;format="Camel"$State("Hello", LocalDateTime.now().toString())));
+    BehaviorBuilder b = newBehaviorBuilder(snapshotState.get());
     return b.build();
   }
 }

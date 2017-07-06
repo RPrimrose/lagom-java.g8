@@ -3,20 +3,20 @@
  */
 package $package$.impl;
 
-import lombok.Value;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.google.common.base.Preconditions;
 import com.lightbend.lagom.serialization.CompressedJsonable;
+import org.immutables.value.Value;
 
 /**
  * The state for the {@link $name;format="Camel"$Entity} entity.
  */
 @SuppressWarnings("serial")
 @Value.Immutable
-@JsonDeserialize(as = Immutable$name;format="Camel"$)
-@JsonSerialize(as = Immutable$name;format="Camel"$)
+@JsonDeserialize(as = Immutable$name;format="Camel"$State)
+@JsonSerialize(as = Immutable$name;format="Camel"$State)
 
 public abstract class $name;format="Camel"$State implements CompressedJsonable {
 
