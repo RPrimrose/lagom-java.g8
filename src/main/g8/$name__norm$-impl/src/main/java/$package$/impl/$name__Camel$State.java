@@ -14,16 +14,10 @@ import com.lightbend.lagom.serialization.CompressedJsonable;
  * The state for the {@link $name;format="Camel"$Entity} entity.
  */
 @SuppressWarnings("serial")
-@Value
-@JsonDeserialize
-public final class $name;format="Camel"$State implements CompressedJsonable {
+@Value.Immutable
+@JsonDeserialize(as = Immutable$name;format="Camel"$)
+@JsonSerialize(as = Immutable$name;format="Camel"$)
 
-  public final String message;
-  public final String timestamp;
+public abstract class $name;format="Camel"$State implements CompressedJsonable {
 
-  @JsonCreator
-  public $name;format="Camel"$State(String message, String timestamp) {
-    this.message = Preconditions.checkNotNull(message, "message");
-    this.timestamp = Preconditions.checkNotNull(timestamp, "timestamp");
-  }
 }
